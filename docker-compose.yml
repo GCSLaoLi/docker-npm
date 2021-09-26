@@ -3,6 +3,7 @@ version: '3.1'
 services:
   verdaccio:
     image: verdaccio/verdaccio
+    restart: always
     container_name: "verdaccio"
     environment:
       - VERDACCIO_PORT=4873
